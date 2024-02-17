@@ -1,4 +1,4 @@
-# clasificador-cancer
+# Clasificador de cáncer de esofágo
 
 Se utiliza Perceptrón lineal para realizar una clasificación binaria de un subconjunto de imágenes provenientes del [Data Challenge by Mauna Kea](https://challengedata.ens.fr/login/?next=/participants/challenges/11).
 Para este clasificador se utilizaron solamente las imágenes de tejido sano y las imágenes de tejido con displasia/cáncer. De manera que el conjuntode datos está formado por 1,469 imágenes de tejido sano _(clase 0)_ y 3,594 imágenes de displasia/cáncer _(clase 1)_.
