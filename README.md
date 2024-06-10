@@ -12,3 +12,9 @@ Cada renglón representa un cliente y cada columna un atributo. Entre los atribu
 - _Churn_: Clientes que se abandonaron la compañía en el último mes 
   
 En la fase de preprocesamiento, se elimina el customerID, se sustituyen los valors nulos por 0 (solo 11, presentes en la variable TotalCharges), y se realiza una transformación de las variables categóricas en binarias mediante la codificación **One Hot Encoding**.
+
+## ¿Qué KPIs se obtuvieron?
+
+- **Tasa Churn**: Se obtuvo cuando clientes estaban perdiendo cada trimestre, con este indicador se puede entender la magnitud del problema y la efectividad de las estrategias de retención.
+- **Tasa de retención**: Nos sirvió para saber cuantos clientes continuan con la suscripción.
+- **Modelo altamente recomendado**: Con este modelo pudimos obtener una muy buena aproximación y cuando se trate de un problema del tipo churn, considerar altamente Random Forest por los resultados obtenidos.
