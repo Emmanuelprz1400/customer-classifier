@@ -1,20 +1,13 @@
-# Clasificador sobre retención de clientes
+# Random Forest
 
-Se realiza un análisis para la retención de clientes de una empresa de telecomunicaciones, utilizando árboles de decisión y bosque aleatorio para entender las características más relevantes para la retención de clientes de una empresa de telecomunicaciones.
+**Decision tree**: Es un algoritmo de aprendizaje supervisado no paramétrico,  que se utiliza tanto para tareas de clasificación como de regresión. Tiene una estructura jerárquica, de árbol, que consta de un nodo raíz, ramas, nodos internos y nodos de hoja.
 
-El conjunto de datos se tomó de [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn) Éste cuenta con 7,043 renglones y 21 columnas.
+**Random Forest**: Es un algoritmo de aprendizaje automático que combina los resultados de múltiples árboles de decisión para obtener un único resultado. Su facilidad de uso y flexibilidad han impulsado su adopción, ya que gestiona problemas tanto de clasificación como de regresión.
 
-Cada renglón representa un cliente y cada columna un atributo. Entre los atributos se incluyen:
+Existen distintos tipos de árboles de decisiones, como lo son:
 
-- _Características socidemograficas_: sexo, si tienen pareja y dependientes económicos
-- _Información de la cuenta_: antiguedad como cliente en la compañía, contrato, forma de pago, monto del pago mensual, etc
-- _Servicios que recibe_: telefono, si tiene multiples líneas, internet, seguridad, respaldos, TV, etc
-- _Churn_: Clientes que se abandonaron la compañía en el último mes 
-  
-En la fase de preprocesamiento, se elimina el customerID, se sustituyen los valors nulos por 0 (solo 11, presentes en la variable TotalCharges), y se realiza una transformación de las variables categóricas en binarias mediante la codificación **One Hot Encoding**.
+- **Iterative Dichotomiser (ID3)**: Este algoritmo aprovecha la entropía y la ganancia de información como métricas para evaluar las divisiones de los candidatos.
 
-## ¿Qué KPIs se obtuvieron?
+- **C4.5**: Este algoritmo se considera una iteración posterior de ID3.. Puede utilizar la ganancia de información o los ratios de ganancia para evaluar los puntos de división dentro de los árboles de decisión.
 
-- **Tasa Churn**: Se obtuvo cuando clientes estaban perdiendo cada trimestre, con este indicador se puede entender la magnitud del problema y la efectividad de las estrategias de retención.
-- **Tasa de retención**: Nos sirvió para saber cuantos clientes continuan con la suscripción.
-- **Modelo altamente recomendado**: Con este modelo pudimos obtener una muy buena aproximación y cuando se trate de un problema del tipo churn, considerar altamente Random Forest por los resultados obtenidos.
+- **Árboles de clasificación y regresión (CART)**: Este algoritmo suele utilizar la impureza de Gini para identificar el atributo ideal para dividir. La impureza de Gini mide la frecuencia con la que se clasifica erróneamente un atributo elegido al azar. Al evaluar utilizando la impureza de Gini, un valor más bajo es más ideal.
